@@ -1,0 +1,15 @@
+# Ignore virtual environment
+google-calendar-agent/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# API Stuff
+client_secret.json
+openai_api.py
+
+# IDE stuff
+.vscode/
+.idea/
