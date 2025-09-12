@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import Literal
-from logger import logger
+from utils_and_tools.logger import logger
 
 class RequestType(BaseModel):
      """Router LLM Call: Determine the type of request"""

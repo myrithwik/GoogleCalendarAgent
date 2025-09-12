@@ -4,7 +4,7 @@ from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.exceptions import RefreshError
 import os
-from logger import logger
+from utils_and_tools.logger import logger
 
 def create_service(client_secret_file, api_name, api_version, *scopes, prefix=''):
     CLIENT_SECRET_FILE = client_secret_file
@@ -14,6 +14,7 @@ def create_service(client_secret_file, api_name, api_version, *scopes, prefix=''
 
     creds = None
     working_dir = os.getcwd()
+    working_dir = os.path.join(working_dir, "api_keys")
     token_dir = 'token_files'
     token_file = f'token_{API_SERVICE_NAME}_{API_VERSION}{prefix}.json'
 

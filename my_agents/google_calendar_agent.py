@@ -2,10 +2,10 @@
 #from agents import Agent
 #from prompts import calendar_agent_system_prompt, main_agent_system_prompt
 #from calendar_tools import list_calendar_list, list_calendar_events, insert_calendar_event, create_calendar
-from openai_api import client
-from data_models import RequestType, CalendarRequestType, generate_data_model
-from calendar_tools import list_calendar_list, list_calendar_events, create_calendar, insert_calendar_event
-from logger import logger
+from api_keys.openai_api import client
+from utils_and_tools.data_models import RequestType, CalendarRequestType, generate_data_model
+from utils_and_tools.calendar_tools import list_calendar_list, list_calendar_events, create_calendar, insert_calendar_event
+from utils_and_tools.logger import logger
 import json
 
 MODEL = "gpt-5-nano"

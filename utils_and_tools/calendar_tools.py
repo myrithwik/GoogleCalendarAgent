@@ -1,6 +1,6 @@
 import json
 from typing import Dict, Any
-from google_apis import create_service
+from api_keys.google_apis import create_service
 from agents import function_tool
 from datetime import datetime
 from dateutil import parser
@@ -124,7 +124,7 @@ def insert_calendar_event(calendar_id: str, event_details: Dict[str,Any]):
 
     Parameters:
     - service: The Google Calendar API service instance.
-    - calendar_id: THe ID of the calendar where the event will be inserted.
+    - calendar_id: The ID of the calendar where the event will be inserted.
     #####- **kwargs: Additional keyword arguments representing the event details.
     - event_details: Dictionary with additional keyword arguements for the event details
     Returns:
@@ -151,6 +151,7 @@ def insert_calendar_event(calendar_id: str, event_details: Dict[str,Any]):
     '''
 
     event_details["summary"] = event_details["event_name"]
+    print(event_details)
     event = calendar_service.events().insert(
         calendarId=calendar_id,
         body=event_details

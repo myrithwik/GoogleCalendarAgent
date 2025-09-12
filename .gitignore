@@ -7,8 +7,9 @@ __pycache__/
 *.pyd
 
 # API Stuff
-client_secret.json
-openai_api.py
+api_keys/client_secret.json
+api_keys/token_files
+api_keys/openai_api.py
 
 # IDE stuff
 .vscode/

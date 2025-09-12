@@ -1,11 +1,11 @@
 #from swarm import Swarm
-from logger import logger
+from utils_and_tools.logger import logger
 #from agents import Runner
-from my_agents import extract_request_type, general_agent, calendar_agent
-from date_scheduler_agent import coordinating_date_agent
+from my_agents.google_calendar_agent import extract_request_type, general_agent, calendar_agent
+from my_agents.date_scheduler_agent import coordinating_date_agent
 import streamlit as st
 import asyncio
-from openai_api import client
+from api_keys.openai_api import client
 from openai.types.chat import ChatCompletionMessage
 
 
