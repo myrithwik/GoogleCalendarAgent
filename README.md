@@ -2,6 +2,7 @@
 
 An advanced **multi-agent orchestration system** built in Python, featuring a **General Agent**, a **Google Calendar Agent**, and a **Virtual Date Scheduling Agent**.  
 This platform demonstrates how to design, route, and execute AI driven workflows by combining **LLM reasoning**, **tool use**, and **external API integrations**.
+A key aspect of this project is to demonstrate the difference in AI Agent architecture with and without the use of LLM tools. The Google Calendar Agent does not use tools but uses extensive routing, while the Virtual Date Scheduling Agent uses tools.
 
 ---
 
@@ -71,5 +72,6 @@ This platform demonstrates how to design, route, and execute AI driven workflows
 ## ✨ Why This Project Stands Out
 
 - **End-to-End AI Workflow**: From natural language to actionable results in external systems.  
-- **Real World Impact**: Solves the modern challenge of coordination and decision making with LLM driven automation.  
+- **Real World Impact**: Solves the modern challenge of coordination and decision making with LLM driven automation.
+- **LLM Tool Case Study**: Explores the use case of LLM tools and how agentic architecture looks different with and without the use of tools 
 - **Scalable Design**: New agents and tools can be plugged into the router without breaking existing functionality.  
