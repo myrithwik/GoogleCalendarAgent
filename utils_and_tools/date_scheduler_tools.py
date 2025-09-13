@@ -32,8 +32,8 @@ def find_overlaps(free_times_1, free_times_2):
 def extract_free_time(person1: str, person2:str, start_time: str, end_time: str) -> list:
     logger.debug("Called the extract_free_time tool")
 
-    free_times_1 = get_free_times(email="my.rithwik@gmail.com", start_time_str=start_time, end_time_str=end_time)
-    free_times_2 = get_free_times(email="rakshasen953@gmail.com", start_time_str=start_time, end_time_str=end_time)
+    free_times_1 = get_free_times(email="exmampl1@gmail.com", start_time_str=start_time, end_time_str=end_time)
+    free_times_2 = get_free_times(email="example2@gmail.com", start_time_str=start_time, end_time_str=end_time)
 
     overlap_free_time = find_overlaps(free_times_1, free_times_2)
 
@@ -141,7 +141,7 @@ def create_date_event(start_time: str, end_time: str, date_idea_title: str, date
             'timeZone': 'America/Los_Angeles',
         },
         'attendees': [
-            {'email': 'my.rithwik@berkeley.edu'}
+            {'email': 'example2@gmail.com'}
         ]                                        
     }
 
